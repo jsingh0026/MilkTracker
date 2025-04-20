@@ -1,4 +1,4 @@
-import { Text, TouchableOpacity, View } from "react-native";
+import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 import Calendar from "@/components/Calendar";
 import Details from "@/components/Details";
 import { Button } from "react-native-paper";
@@ -8,10 +8,10 @@ import RechargeModal from "@/components/RechargeModal";
 export default function Index() {
   const insets = useSafeAreaInsets();
   return (
-    <View
+    <ScrollView
       style={{
         flex: 1,
-        justifyContent: "center",
+        // justifyContent: "center",
         // alignItems: "center",
         paddingBottom: insets.bottom,
       }}
@@ -37,6 +37,6 @@ export default function Index() {
           <RechargeModal />
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }
